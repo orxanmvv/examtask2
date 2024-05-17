@@ -1,0 +1,30 @@
+﻿
+@model CreateTeamVm
+
+
+<div class="container">
+
+  <form  method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label class="form-label">Fullname</label>
+    <input asp-for="Fullname" class="form-control"   placeholder="enter Fullname">
+            <span asp-validation-for="Fullname" style="color:red"></span>
+  </div>
+  <div class="form-group">
+    <label class="form-label">Job</label>
+    <input asp-for="Job" class="form-control"  placeholder="enter job">
+     <span asp-validation-for="Job" style="color:red"></span>
+  </div>
+  <div class="form-group">
+    <label class="form-label" >ImgFile</label>
+    <input asp-for=ImgFile class="form-control" >
+    <span asp-validation-for="ImgFile" style="color:red"></span>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+
+</div>
